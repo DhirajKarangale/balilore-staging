@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "install": "npm install --legacy-peer-deps"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
@@ -16,7 +15,6 @@
     "axios-mock-adapter": "^2.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-helmet-async": "^2.0.5",
     "react-hook-form": "^7.57.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.6.2"
@@ -33,9 +31,5 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
-  },
-  "overrides": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
   }
 }

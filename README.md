@@ -20,7 +20,7 @@ A **modular, scalable React + Vite** web application featuring dynamic content p
 - ✅ Modular Header and Footer layout  
 - 🖼️ Story Grid / Gallery view  
 - 📝 Submit Form with Validations  
-- 🔍 SEO Copy & Metadata  
+- 🔍 SEO & Metadata  
 - 🎯 Banner / Hero Section  
 - 📱 Fully Responsive Design  
 - 🌐 React Router Integration  
