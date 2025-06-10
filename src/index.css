@@ -1,34 +1,16 @@
 @import "tailwindcss";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
-
-
 :root {
     --primary-color: #E91E63;
-    /* Coral */
     --accent-color: #212121;
-    /* Dark Gray for better contrast in light mode */
     --ivory-color: #FFFFF0;
-    /* Ivory */
     --lightgray-color: #F5F5F5;
-    /* Light Gray */
-
-    /* Dark Theme Colors - Further refined based on reference */
     --dark-background: #0f0f2d;
-    /* Deep, slightly muted dark blue */
     --dark-card-background: #1c1c40;
-    /* Darker shade for cards */
     --dark-text-primary: #e0e0e0;
-    /* Off-white for main text */
     --dark-text-secondary: #a0a0a0;
-    /* Lighter gray for secondary text */
     --dark-accent-blue: #6a6aff;
-    /* Vibrant blue accent */
     --dark-accent-purple: #a569bd;
-    /* Muted purple accent */
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -42,7 +24,6 @@ body {
     font-family: 'Lora', serif;
     background-color: var(--ivory-color);
     color: var(--accent-color);
-    /* Use darker accent color for light mode text */
     line-height: 1.7;
     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
@@ -76,7 +57,6 @@ html.dark h6 {
 
 html.dark .btn-primary {
     background: linear-gradient(45deg, var(--dark-accent-blue) 0%, var(--dark-accent-purple) 100%);
-    /* Use dark mode accents */
     box-shadow: 0 4px 20px 0 rgba(106, 106, 255, 0.35);
 }
 
@@ -103,20 +83,12 @@ html.dark .btn-ghost:hover {
 html.dark .form-input {
     background: var(--dark-background);
     color: var(--dark-accent-blue);
-    /* Neon blue color for input text in dark mode */
     border: 1.5px solid var(--dark-accent-purple);
-    /* Neon purple border in dark mode */
 }
 
 html.dark .form-input:focus {
     border-color: var(--dark-accent-blue);
     box-shadow: 0 0 0 3px rgba(106, 106, 255, 0.3);
-}
-
-/* Hero overlay in dark mode */
-html.dark .hero-overlay {
-    background: rgba(0, 0, 0, 0.8) !important;
-    /* Make hero overlay darker in dark mode */
 }
 
 h1,
@@ -129,7 +101,6 @@ h6 {
     font-weight: 800;
     letter-spacing: -0.04em;
     color: var(--accent-color);
-    /* Use darker accent color for light mode headings */
 }
 
 .btn-primary {
@@ -146,9 +117,7 @@ h6 {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    /* Needed for pseudo-elements */
     overflow: hidden;
-    /* Needed for pseudo-elements */
     z-index: 1;
 }
 
@@ -177,7 +146,6 @@ h6 {
 .btn-ghost {
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
-    /* Use darker accent color for light mode ghost button text/border */
     padding: 0.9rem 2.4rem;
     border-radius: 1rem;
     font-weight: 700;
@@ -223,7 +191,6 @@ h6 {
     }
 }
 
-/* Modern form styling */
 .form-input {
     width: 100%;
     padding: 0.9rem 1.2rem;
@@ -233,7 +200,6 @@ h6 {
     font-size: 1.08rem;
     background: rgba(255, 255, 255, 0.95);
     color: var(--accent-color);
-    /* Use darker accent color for light mode form input text */
     transition: all 0.3s ease-in-out;
 }
 
@@ -243,29 +209,24 @@ h6 {
     box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.2);
 }
 
-/* Style for form labels */
 label {
     display: block;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--accent-color);
-    /* Use darker accent for light mode labels */
 }
 
 html.dark label {
     color: var(--dark-accent-purple);
-    /* Neon purple color for labels in dark mode */
 }
 
-/* Container styles */
 .container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* Section spacing */
 .section {
     padding: 4rem 0;
 }
@@ -276,15 +237,12 @@ html.dark label {
     }
 }
 
-/* Balinese motif background pattern */
 .bg-pattern {
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E91E63' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Specific dark mode adjustments */
 html.dark .hero-overlay {
     background: rgba(0, 0, 0, 0.8) !important;
-    /* Make hero overlay darker in dark mode */
 }
 
 html.dark .text-gray-700 {
@@ -303,33 +261,26 @@ html.dark .text-gray-400 {
     color: var(--dark-text-secondary);
 }
 
-/* Ensure text is visible in light mode */
 body {
     color: var(--accent-color);
 }
 
 .text-gray-700 {
     color: var(--accent-color);
-    /* Use darker accent color for general text in light mode */
 }
 
 .text-gray-600 {
     color: #4a5568;
-    /* Slightly lighter than accent for secondary text in light mode */
 }
 
 .text-gray-500 {
     color: #718096;
-    /* Even lighter */
 }
 
 .text-gray-400 {
     color: #a0aec0;
-    /* Lighter still */
 }
 
-/* Custom gradient background for dark mode hero */
 html.dark .hero-gradient-overlay {
     background: linear-gradient(to top, rgba(15, 15, 45, 0.98) 0%, rgba(15, 15, 45, 0) 50%);
-    /* Use darker background color */
 }
