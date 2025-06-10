@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import StoryCard from '../components/StoryCard';
-import { Helmet } from 'react-helmet-async';
 
 interface Story {
     id: string;
@@ -36,26 +35,6 @@ const StoriesPage = () => {
 
     return (
         <div className="min-h-screen bg-ivory dark:bg-dark-background section transition-colors duration-500">
-
-            <Helmet>
-                <title>Community Stories | BaliLore</title>
-                <meta name="description" content="Explore authentic stories from locals and travelers sharing their experiences, traditions, and cultural moments in Bali." />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://balilore-staging.vercel.app/stories" />
-                <meta property="og:title" content="Community Stories | BaliLore" />
-                <meta property="og:description" content="Browse community-submitted stories that celebrate the rich culture and vibrant life of Bali." />
-                <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:url" content="https://balilore-staging.vercel.app/stories" />
-                <meta name="twitter:title" content="Community Stories | BaliLore" />
-                <meta name="twitter:description" content="Discover heartfelt stories from the BaliLore community, told through words, images, and media." />
-                <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80" />
-
-                <link rel="icon" href="/favicon.ico" />
-            </Helmet>
-
             <div className="container mx-auto px-6">
                 <h1 className="font-playfair text-4xl md:text-5xl font-bold text-accent dark:text-white mb-12 text-center">Community Stories</h1>
                 {loading ? (

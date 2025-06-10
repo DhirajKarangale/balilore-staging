@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
@@ -39,24 +38,6 @@ const StoryDetailPage = () => {
 
     return (
         <div className="min-h-screen bg-ivory section">
-
-            <Helmet>
-                <title>{story?.title} | BaliLore</title>
-                <meta name="description" content={`Read "${story?.title}" by ${story?.author} – a community story on BaliLore.`} />
-
-                <meta property="og:type" content="article" />
-                <meta property="og:title" content={`${story?.title} | BaliLore`} />
-                <meta property="og:description" content={`Read this story by ${story?.author} on BaliLore.`} />
-                <meta property="og:image" content={story?.imageUrl || 'https://balilore-staging.vercel.app/default-story.jpg'} />
-                <meta property="og:url" content={`https://balilore-staging.vercel.app/story/${id}`} />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content={`${story?.title} | BaliLore`} />
-                <meta name="twitter:description" content={`A Balinese story by ${story?.author} – explore more on BaliLore.`} />
-                <meta name="twitter:image" content={story?.imageUrl || 'https://balilore-staging.vercel.app/default-story.jpg'} />
-            </Helmet>
-
-
             <div className="container mx-auto px-6 max-w-2xl">
                 <div className="card">
                     <img src={story.imageUrl} alt={story.title} className="w-full h-64 object-cover rounded-lg mb-6" />
