@@ -16,7 +16,7 @@ const HomePage = () => {
                 <div className="container mx-auto px-6 relative z-20">
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 fade-in animate-slide-up text-white dark:text-white" style={{ animationDelay: '0.2s' }}>
-                            Dk123 Discover the Untold Stories of Bali
+                            Discover the Untold Stories of Bali
                         </h1>
                         <p className="font-lora text-xl sm:text-2xl mb-12 leading-relaxed fade-in animate-fade-in text-white dark:text-dark-text-primary" style={{ animationDelay: '0.4s' }}>
                             Where locals and visitors share Balian tales, hidden histories, and cultural insights through photos, videos, poems, and street art.

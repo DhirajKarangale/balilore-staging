@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+name: balilore-staging
+description: >
+  A modular React + Vite web application featuring dynamic content pages,
+  form submissions, banners, and more — structured for scalability and fast deployment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+features:
+  - Header and Footer layout
+  - Story grid/gallery view
+  - Submit form with validations
+  - SEO copy and metadata
+  - Banner section
+  - Responsive design
+  - React Router integration
+  - Fast build with Vite
 
-Currently, two official plugins are available:
+tech_stack:
+  frontend: React 18 + Vite
+  routing: React Router DOM
+  styling: CSS Modules
+  deployment: Vercel or Netlify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+project_structure: |
+  .
+  ├── public/                  # Static assets
+  ├── src/
+  │   ├── components/          # Shared UI components
+  │   ├── pages/               # Route-based views
+  │   ├── App.jsx              # Route definitions
+  │   └── main.jsx             # ReactDOM root
+  ├── index.html               # Entry HTML
+  ├── vite.config.js           # Vite configuration
+  └── README.md
 
-## Expanding the ESLint configuration
+scripts:
+  install: npm install
+  dev: npm run dev
+  build: npm run build
+  preview: npm run preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+getting_started:
+  - step: Clone the repository
+    command: git clone https://github.com/DhirajKarangale/balilore-staging.git
+  - step: Navigate into project folder
+    command: cd balilore-staging
+  - step: Install dependencies
+    command: npm install
+  - step: Start the development server
+    command: npm run dev
+  - step: Visit in browser
+    command: http://localhost:5173
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+deployment:
+  instructions: |
+    You can deploy this project using Vercel or Netlify by connecting your
+    GitHub repository and setting the build command to `npm run build` and
+    output directory to `dist/`.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+live_demo: https://balilore-staging.vercel.app
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+license:
+  type: MIT
+  file: LICENSE
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+author:
+  name: Dhiraj Karangale
+  github: https://github.com/dhirajkarangale
+  linkedin: https://linkedin.com/in/dhirajkarangale
