@@ -1,67 +1,41 @@
-name: balilore-staging
-description: >
-  A modular React + Vite web application featuring dynamic content pages,
-  form submissions, banners, and more — structured for scalability and fast deployment.
+# 🌴 Balilore Staging
 
-features:
-  - Header and Footer layout
-  - Story grid/gallery view
-  - Submit form with validations
-  - SEO copy and metadata
-  - Banner section
-  - Responsive design
-  - React Router integration
-  - Fast build with Vite
+A **modular, scalable React + Vite** web application featuring dynamic content pages, SEO-ready metadata, form handling, and responsive design — built for fast deployment and maintainability.
 
-tech_stack:
-  frontend: React 18 + Vite
-  routing: React Router DOM
-  styling: CSS Modules
-  deployment: Vercel or Netlify
+![Vercel Deployment](https://img.shields.io/badge/Deployed-Vercel-000?style=flat&logo=vercel)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react)
+![Vite](https://img.shields.io/badge/Vite-Fast%20Builds-646CFF?style=flat&logo=vite)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-Styling-06B6D4?style=flat&logo=tailwindcss)
 
-project_structure: |
-  .
-  ├── public/                  # Static assets
-  ├── src/
-  │   ├── components/          # Shared UI components
-  │   ├── pages/               # Route-based views
-  │   ├── App.jsx              # Route definitions
-  │   └── main.jsx             # ReactDOM root
-  ├── index.html               # Entry HTML
-  ├── vite.config.js           # Vite configuration
-  └── README.md
+---
 
-scripts:
-  install: npm install
-  dev: npm run dev
-  build: npm run build
-  preview: npm run preview
+## 🚀 Live Demo
 
-getting_started:
-  - step: Clone the repository
-    command: git clone https://github.com/DhirajKarangale/balilore-staging.git
-  - step: Navigate into project folder
-    command: cd balilore-staging
-  - step: Install dependencies
-    command: npm install
-  - step: Start the development server
-    command: npm run dev
-  - step: Visit in browser
-    command: http://localhost:5173
+👉 **[balilore-staging.vercel.app](https://balilore-staging.vercel.app)**
 
-deployment:
-  instructions: |
-    You can deploy this project using Vercel or Netlify by connecting your
-    GitHub repository and setting the build command to `npm run build` and
-    output directory to `dist/`.
+---
 
-live_demo: https://balilore-staging.vercel.app
+## 🧩 Features
 
-license:
-  type: MIT
-  file: LICENSE
+- ✅ Modular Header and Footer layout  
+- 🖼️ Story Grid / Gallery view  
+- 📝 Submit Form with Validations  
+- 🔍 SEO Copy & Metadata  
+- 🎯 Banner / Hero Section  
+- 📱 Fully Responsive Design  
+- 🌐 React Router Integration  
+- ⚡ Lightning-fast Builds with Vite  
+- 🎨 Styled with Tailwind CSS  
 
-author:
-  name: Dhiraj Karangale
-  github: https://github.com/dhirajkarangale
-  linkedin: https://linkedin.com/in/dhirajkarangale
+---
+
+## 🛠 Tech Stack
+
+| Layer        | Technology           |
+|--------------|----------------------|
+| **Frontend** | React 18 + Vite      |
+| **Routing**  | React Router DOM     |
+| **Styling**  | Tailwind CSS         |
+| **Deployment** | Vercel  |
+
+---
