@@ -1,8 +1,30 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const HomePage = () => {
     return (
         <div className="min-h-screen bg-ivory dark:bg-dark-background transition-colors duration-500">
+
+            <Helmet>
+                <title>Discover Stories of Bali | BaliLore</title>
+                <meta name="description" content="Explore authentic stories, art, and cultural tales from Bali. BaliLore is a community for locals and travelers to share untold narratives through photos, poems, and more." />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://balilore-staging.vercel.app/" />
+                <meta property="og:title" content="Discover Stories of Bali | BaliLore" />
+                <meta property="og:description" content="Join BaliLore to share your perspective on Bali’s culture through photos, videos, poems, and street art." />
+                <meta property="og:image" content="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://balilore-staging.vercel.app/" />
+                <meta name="twitter:title" content="Discover Stories of Bali | BaliLore" />
+                <meta name="twitter:description" content="Explore untold stories, cultural insights, and personal experiences from Bali on BaliLore." />
+                <meta name="twitter:image" content="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" />
+
+                <link rel="icon" href="/favicon.ico" />
+            </Helmet>
+
+
             <section className="relative bg-accent text-white py-32 md:py-40 overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-60 z-10 hero-overlay"></div>
                 <div className="absolute inset-0 z-10 hero-gradient-overlay"></div>

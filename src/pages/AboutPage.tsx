@@ -1,8 +1,30 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
 
 const AboutPage = () => {
     return (
         <div className="bg-ivory dark:bg-dark-background min-h-screen py-16 md:py-24 transition-colors duration-500">
+
+            <Helmet>
+                <title>About BaliLore | Cultural Stories and Mission</title>
+                <meta name="description" content="Learn about BaliLore's mission to preserve and share Bali's rich culture through community storytelling, art, and heritage documentation." />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://balilore-staging.vercel.app/about" />
+                <meta property="og:title" content="About BaliLore | Cultural Stories and Mission" />
+                <meta property="og:description" content="Discover the purpose behind BaliLore – a platform where locals and travelers contribute authentic stories and cultural insights from Bali." />
+                <meta property="og:image" content="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://balilore-staging.vercel.app/about" />
+                <meta name="twitter:title" content="About BaliLore | Cultural Stories and Mission" />
+                <meta name="twitter:description" content="Learn how BaliLore is building a community around preserving and sharing Bali's untold stories, art, and culture." />
+                <meta name="twitter:image" content="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" />
+
+                <link rel="icon" href="/favicon.ico" />
+            </Helmet>
+
             <div className="container mx-auto px-6">
                 <div className="max-w-3xl mx-auto">
                     <div className="text-center mb-12 fade-in" style={{ animationDelay: '0.1s' }}>
