@@ -1,11 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import StoriesPage from './pages/StoriesPage';
 import StoryDetailPage from './pages/StoryDetailPage';
+import SubmitPage from './pages/SubmitPage';
 import Layout from './components/Layout';
+
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
+
 import './App.css';
 
 interface Story {
@@ -137,6 +141,7 @@ function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="stories" element={<StoriesPage />} />
           <Route path="story/:id" element={<StoryDetailPage />} />
+          <Route path="submit" element={<SubmitPage />} />
           <Route path="*" element={
             <div className="container mx-auto px-4 py-16 text-center">
               <h1 className="text-3xl font-bold mb-4">Page Not Found</h1>
