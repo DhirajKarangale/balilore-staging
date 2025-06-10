@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-    --primary-color: #E91E63;
-    --accent-color: #212121;
-    --ivory-color: #FFFFF0;
-    --lightgray-color: #F5F5F5;
+    --color-primary: #E91E63;
+    --color-accent: #424242;
+    --color-ivory: #FFFFF0;
+    --color-lightgray: #F5F5F5;
     --dark-background: #0f0f2d;
     --dark-card-background: #1c1c40;
     --dark-text-primary: #e0e0e0;
@@ -15,6 +15,65 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --font-playfair: 'Playfair Display', serif;
+    --font-lora: 'Lora', serif;
+
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-card-hover: 0 8px 30px rgba(0, 0, 0, 0.08);
+    --shadow-button: 0 2px 4px rgba(233, 30, 99, 0.2);
+    --shadow-button-hover: 0 4px 6px rgba(233, 30, 99, 0.3);
+
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.bg-ivory {
+    background-color: var(--color-ivory);
+}
+
+.bg-lightgray {
+    background-color: var(--color-lightgray);
+}
+
+.font-playfair {
+    font-family: var(--font-playfair);
+}
+
+.font-lora {
+    font-family: var(--font-lora);
+}
+
+.shadow-card {
+    box-shadow: var(--shadow-card);
+}
+
+.shadow-card-hover:hover {
+    box-shadow: var(--shadow-card-hover);
+}
+
+.shadow-button {
+    box-shadow: var(--shadow-button);
+}
+
+.shadow-button-hover:hover {
+    box-shadow: var(--shadow-button-hover);
+}
+
+.rounded-xl {
+    border-radius: var(--radius-xl);
+}
+
+.rounded-2xl {
+    border-radius: var(--radius-2xl);
 }
 
 body {
@@ -283,4 +342,54 @@ body {
 
 html.dark .hero-gradient-overlay {
     background: linear-gradient(to top, rgba(15, 15, 45, 0.98) 0%, rgba(15, 15, 45, 0) 50%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slow-zoom {
+    animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+.dark .bg-primary {
+    background-color: var(--color-primary);
 }
